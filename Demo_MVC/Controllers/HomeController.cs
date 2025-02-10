@@ -10,16 +10,20 @@ public class HomeController : Controller
 
     public HomeController(ILogger<HomeController> logger)
     {
-        string add = "Bùi Tất Đạt - 2121051052";
         _logger = logger;
     }
-    
+
     public IActionResult Index()
     {
         return View();
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+
+    public IActionResult Contact()
     {
         return View();
     }
