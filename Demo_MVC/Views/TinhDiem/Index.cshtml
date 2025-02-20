@@ -1,0 +1,11 @@
+@model Demo_MVC.Models.TinhDiem
+<form asp-action="Index">
+    <label for="fname">Điểm A:</label><br>
+    <input type="double" name="DiemA" placeholder="Điểm A: "><br>
+    <label for="fname">Điểm B:</label><br>
+    <input type="double" name="DiemB" placeholder="Điểm B: "><br>
+    <label for="fname">Điểm C:</label><br>
+    <input type="double" name="DiemC" placeholder="Điểm C: "><br>
+    <input type="submit" value="Tính điểm">
+</form>
+<h2>@ViewBag.Message</h2>

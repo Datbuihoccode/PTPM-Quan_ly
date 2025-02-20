@@ -1,0 +1,7 @@
+@model Demo_MVC.Models.BMI
+<form asp-action="Index">
+    <input type="double" name="weight" placeholder="Cân nặng (kg): ">
+    <input type="double" name="height" placeholder="Chiều cao (m): ">
+    <input type="submit" value="Tạo dữ liệu">
+</form>
+<h2>@ViewBag.Message</h2>

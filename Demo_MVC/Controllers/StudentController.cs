@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using DemoMVC.Models;
+using Demo_MVC.Models;
 namespace Demo_MVC.Controllers
 {
     public class StudentController : Controller
@@ -9,7 +9,8 @@ namespace Demo_MVC.Controllers
             Student std = new Student();
             std.Id = "1";
             std.FullName = "Nguyen Van A";
-            return View(std);       }
+            return View(std);       
+        }
         [HttpGet]
         public IActionResult Create()
         {
