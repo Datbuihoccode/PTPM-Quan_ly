@@ -1,0 +1,26 @@
+@model IEnumerable<MvcMovie.Models.Employee>
+<a asp-action="Create" class="w3-btn w3-success w3-border">Create</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FullName</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var em in Model)
+        {
+            <tr>
+                <td>@em.EmployeeId</td>
+                <td>@em.FullName</td>
+                <td>@em.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@em.EmployeeId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@em.EmployeeId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
