@@ -1,15 +1,16 @@
+using System.Security.Cryptography;
 using System.ComponentModel.DataAnnotations; 
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMovie.Models
 {
-    [Table("Persons")]
-    public class Person 
+   public class Person 
     {
         [Key]
+        public int Id { get; set; }
         public required string PersonId { get; set; }
-        public  required string FullName { get; set; }
-        [EmailAddress]
-        public string? Address { get; set; }
+        public string FullName { get; set; }
+        public string Address { get; set; }
+        public int Age { get; set; }
     }
 }

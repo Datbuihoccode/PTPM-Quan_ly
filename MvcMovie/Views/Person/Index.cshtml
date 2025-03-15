@@ -1,26 +1,53 @@
 @model IEnumerable<MvcMovie.Models.Person>
-<a asp-action="Create" class="w3-btn w3-success w3-border">Create</a>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>FullName</th>
-            <th>Address</th>
-            <th>Actions</th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var person in Model)
-        {
-            <tr>
-                <td>@person.PersonId</td>
-                <td>@person.FullName</td>
-                <td>@person.Address</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@person.PersonId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@person.PersonId">Delete</a>
-                </td>
-            </tr>
-        }
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PersonId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
     </tbody>
 </table>

@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using MvcMovie.Models;
 namespace MvcMovie.Data
 {
     using Microsoft.EntityFrameworkCore;
@@ -8,7 +10,11 @@ namespace MvcMovie.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {}
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<MvcMovie.Models.Person> Person { get; set; } = default!;
+
+public DbSet<MvcMovie.Models.Employee> Employee { get; set; } = default!;
+
+public DbSet<MvcMovie.Models.Student> Student { get; set; } = default!;
+        
     }
 }
