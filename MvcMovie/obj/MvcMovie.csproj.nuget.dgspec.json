@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PTPM_Quan_ly\\MvcMovie\\MvcMovie.csproj": {}
+    "E:\\PTPM_Quan_ly\\mvcmovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "E:\\PTPM_Quan_ly\\MvcMovie\\MvcMovie.csproj": {
+    "E:\\PTPM_Quan_ly\\mvcmovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PTPM_Quan_ly\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "E:\\PTPM_Quan_ly\\mvcmovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "E:\\PTPM_Quan_ly\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "E:\\PTPM_Quan_ly\\mvcmovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\PTPM_Quan_ly\\MvcMovie\\obj\\",
+        "outputPath": "E:\\PTPM_Quan_ly\\mvcmovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.7.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

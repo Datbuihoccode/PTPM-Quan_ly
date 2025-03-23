@@ -301,3 +301,15 @@ E:\PTPM_Quan_ly\MvcMovie\obj\Debug\net8.0\refint\MvcMovie.dll
 E:\PTPM_Quan_ly\MvcMovie\obj\Debug\net8.0\MvcMovie.pdb
 E:\PTPM_Quan_ly\MvcMovie\obj\Debug\net8.0\MvcMovie.genruntimeconfig.cache
 E:\PTPM_Quan_ly\MvcMovie\obj\Debug\net8.0\ref\MvcMovie.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\EPPlus.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\EPPlus.Interfaces.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\PTPM_Quan_ly\mvcmovie\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
