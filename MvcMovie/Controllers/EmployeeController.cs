@@ -54,7 +54,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmployeeId,Id,PersonId,FullName,Address,Age")] Employee employee)
+        public async Task<IActionResult> Create([Bind("EmployeeID,Id,PersonId,Name,Address")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MvcMovie.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EmployeeId,Id,PersonId,FullName,Address,Age")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("EmployeeID,Id,PersonId,Name,Address")] Employee employee)
         {
             if (id != employee.Id)
             {
