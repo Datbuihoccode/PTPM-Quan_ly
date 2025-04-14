@@ -11,6 +11,7 @@ using MvcMovie.Data;
 using MvcMovie.Models;
 using MvcMovie.Models.Process;
 using OfficeOpenXml;
+using X.PagedList.Extensions;
 
 namespace MvcMovie.Controllers
 {
@@ -55,9 +56,9 @@ namespace MvcMovie.Controllers
                             ps.Name = dt.Rows[i][1].ToString();
                             ps.Address = dt.Rows[i][2].ToString();
                             //add to list
-                            _context.Person.Add(ps);   
+                            _context.Person.Add(ps);
                         }
-                         //save to database
+                        //save to database
                         await _context.SaveChangesAsync();
                         return RedirectToAction(nameof(Index));
                     }
@@ -70,9 +71,11 @@ namespace MvcMovie.Controllers
         {
             _context = context;
         }
-        public IActionResult Download(){
-            var fileName = "YourFileName" +".xlsx";
-            using (ExcelPackage excelPackage = new ExcelPackage()){
+        public IActionResult Download()
+        {
+            var fileName = "YourFileName" + ".xlsx";
+            using (ExcelPackage excelPackage = new ExcelPackage())
+            {
                 ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet1");
                 worksheet.Cells["A1"].Value = "PersonId";
                 worksheet.Cells["B1"].Value = "Name";
@@ -80,13 +83,22 @@ namespace MvcMovie.Controllers
                 var personList = _context.Person.ToList();
                 worksheet.Cells["A2"].LoadFromCollection(personList);
                 var stream = new MemoryStream(excelPackage.GetAsByteArray());
-                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);    
+                return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
             }
         }
         // GET: Person
-        public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
+        // // {
+        // //     return View(await _context.Person.ToListAsync());
+        // // }
+        public ActionResult Index(int? page)
         {
-            return View(await _context.Person.ToListAsync());
+            int pageSize = 3; // số mục mỗi trang
+            int pageNumber = page ?? 1; // trang hiện tại
+
+            var users = _context.Person.OrderBy(u => u.Id); // truy vấn danh sách
+
+            return View(users.ToPagedList(pageNumber, pageSize));
         }
 
         // GET: Person/Details/5

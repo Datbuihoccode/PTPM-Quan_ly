@@ -363,7 +363,6 @@ E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjecti
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Identity.Client.dll
@@ -624,4 +623,10 @@ E:\PTPM-Quan_ly\MvcMovie\obj\Debug\net8.0\refint\MvcMovie.dll
 E:\PTPM-Quan_ly\MvcMovie\obj\Debug\net8.0\MvcMovie.pdb
 E:\PTPM-Quan_ly\MvcMovie\obj\Debug\net8.0\MvcMovie.genruntimeconfig.cache
 E:\PTPM-Quan_ly\MvcMovie\obj\Debug\net8.0\ref\MvcMovie.dll
-E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\System.Drawing.Common.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\X.PagedList.dll
+E:\PTPM-Quan_ly\MvcMovie\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+E:\PTPM-Quan_ly\MvcMovie\obj\Debug\net8.0\MvcMovie.MvcApplicationPartsAssemblyInfo.cs
