@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MvcMovie.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbContext _context;

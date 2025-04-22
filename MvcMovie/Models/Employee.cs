@@ -7,8 +7,8 @@ namespace MvcMovie.Models
         [Required]
         public string EmployeeID { get; set; }
         public int Age { get; set; }
-        public string Factory { get; set; }
-        public string Department { get; set; }
-        public string PhonNumber { get; set; }
+        public string? Factory { get; set; }
+        public string? Department { get; set; }
+        public string? PhonNumber { get; set; }
     }
 }
