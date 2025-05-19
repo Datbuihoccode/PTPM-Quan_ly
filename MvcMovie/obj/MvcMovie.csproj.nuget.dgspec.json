@@ -43,9 +43,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.3, )"
+            },
             "EPPlus": {
               "target": "Package",
               "version": "[7.7.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.12.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

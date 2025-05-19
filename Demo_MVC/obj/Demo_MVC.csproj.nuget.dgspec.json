@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PTPM_Quan_ly\\Demo_Mvc\\Demo_MVC.csproj": {}
+    "E:\\PTPM-Quan_ly\\Demo_MVC\\Demo_MVC.csproj": {}
   },
   "projects": {
-    "E:\\PTPM_Quan_ly\\Demo_Mvc\\Demo_MVC.csproj": {
+    "E:\\PTPM-Quan_ly\\Demo_MVC\\Demo_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PTPM_Quan_ly\\Demo_Mvc\\Demo_MVC.csproj",
+        "projectUniqueName": "E:\\PTPM-Quan_ly\\Demo_MVC\\Demo_MVC.csproj",
         "projectName": "Demo_MVC",
-        "projectPath": "E:\\PTPM_Quan_ly\\Demo_Mvc\\Demo_MVC.csproj",
+        "projectPath": "E:\\PTPM-Quan_ly\\Demo_MVC\\Demo_MVC.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\PTPM_Quan_ly\\Demo_Mvc\\obj\\",
+        "outputPath": "E:\\PTPM-Quan_ly\\Demo_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -91,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
